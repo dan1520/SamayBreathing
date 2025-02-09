@@ -8,6 +8,7 @@
 </head>
 <body>
     <header>
+        <img src="images/samay_white.jpg" alt="Samay Breathing Logo" class="logo">
         <h1>Samay Breathing</h1>
         <p>Connect with ancestral wisdom through breathwork</p>
     </header>
@@ -17,10 +18,16 @@
         <p>Breath is the key to unlocking our essence and reconnecting with ancient wisdom.</p>
     </section>
 
+    <section class="about-me">
+        <h2>About Me</h2>
+        <p>Beyond just breathing and being a breathwork instructor, there is something much deeper that connects us to ourselves. The noise around us and external distractions pull us away from our purpose and our true essence. 
+        My journey with breathwork has profoundly transformed me, strengthening my intuition and allowing me to experience things that words cannot fully describe. 
+        This website and everything I am building here are just a small part of what I want to share with you. 
+        Our ancestral connection is more profound and significant than we often realize, and through breathwork, we can reconnect with that wisdom.</p>
+    </section>
+
     <footer>
         <p>&copy; 2024 Samay Breathing - All rights reserved</p>
     </footer>
-<img src="images/samay_white.jpg" alt="samay Breathing Logo">
 </body>
 </html>
-
