@@ -1,0 +1,233 @@
+/* General Styles */
+body {
+    font-family: 'Merriweather', serif;
+    background-color: #f3e5d8; /* Beige claro */
+    color: #5a3e2b; /* Marrón oscuro */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background-color: #2f2f2f;
+    color: #f7f3ee;
+}
+
+body.dark-mode header,
+body.dark-mode .about-me,
+body.dark-mode .contact-section,
+body.dark-mode .article {
+    background-color: #3a2c22;
+    color: #f7f3ee;
+}
+
+body.dark-mode .contact-section input,
+body.dark-mode .contact-section textarea {
+    background-color: #5a4334;
+    color: #f7f3ee;
+    border-color: #a7795d;
+}
+
+body.dark-mode nav {
+    background-color: #4f3a2c;
+}
+
+body.dark-mode nav ul li a {
+    color: #f7f3ee;
+}
+
+/* Header */
+header {
+    background-color: #8b5e3c; /* Marrón cálido */
+    color: #f7f3ee; /* Beige claro */
+    padding: 15px;
+    text-align: center;
+}
+
+.logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+}
+
+/* Navigation */
+nav {
+    background-color: #a7795d; /* Marrón suave */
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #f5ebe0; /* Beige claro */
+    font-weight: bold;
+}
+
+/* Main Content */
+.container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    flex: 1;
+}
+
+/* About Section */
+.about-me {
+    text-align: center;
+    background: #e0c3a5; /* Beige tierra */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.about-image {
+    display: block;
+    width: 200px;
+    height: auto;
+    max-width: 100%;
+    border-radius: 15px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+    border: 3px solid #8b5e3c;
+    margin: 15px auto;
+}
+
+/* Blog Section */
+.blog-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.blog-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.article {
+    background: #f1e3d1; /* Beige arena */
+    padding: 15px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 350px;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.blog-image {
+    display: block;
+    width: 200px;
+    height: auto;
+    max-width: 100%;
+    border-radius: 15px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+    border: 3px solid #8b5e3c;
+    margin: 15px auto;
+/* Contact Section */
+.contact-section {
+    background-color: #ffffff; /* Fondo blanco */
+    padding: 40px 20px;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Sombra suave para profundidad */
+    text-align: center;
+    margin-top: 50px;
+    transition: all 0.3s ease-in-out; /* Efecto de transición */
+}
+
+.contact-section:hover {
+    transform: translateY(-8px); /* Efecto sutil al pasar el mouse */
+}
+
+.contact-section h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.2rem;
+    color: #5C4033; /* Color madera oscura */
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.contact-section form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.contact-section input,
+.contact-section textarea {
+    width: 100%;
+    max-width: 450px;
+    padding: 14px;
+    font-size: 1rem;
+    border-radius: 12px;
+    border: 2px solid #A47149; /* Color cobre */
+    background-color: #f9f9f9;
+    transition: all 0.3s ease;
+    color: #5C4033;
+}
+
+.contact-section input:focus,
+.contact-section textarea:focus {
+    border-color: #5C4033; /* Enfoque con borde de madera oscura */
+    background-color: #ffffff; /* Fondo blanco al hacer foco */
+    outline: none;
+}
+
+.contact-section textarea {
+    height: 150px;
+    resize: none;
+}
+
+.contact-section button {
+    padding: 15px 40px;
+    font-size: 1.1rem;
+    color: #fff;
+    background-color: #A47149; /* Cobre */
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.contact-section button:hover {
+    background-color: #5C4033; /* Cambio a madera oscura al pasar el mouse */
+    transform: scale(1.05); /* Efecto de ampliación al pasar el mouse */
+}
+
+.contact-section button:active {
+    transform: scale(0.98); /* Efecto de clic */
+}
+
+@media (max-width: 768px) {
+    .contact-section {
+        padding: 30px 15px;
+    }
+
+    .contact-section h2 {
+        font-size: 1.8rem;
+    }
+
+    .contact-section form {
+        width: 100%;
+    }
+}

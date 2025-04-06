@@ -1,33 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Samay Breathing</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Samay Breathing</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Configuración personalizada de colores y fuentes -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'tierra-claro': '#EFE9DD',
+            'cobre': '#B26A4E',
+            'madera': '#4E342E',
+            'rojo-tierra': '#9F3E2E',
+            'arena': '#F3E5AB',
+          },
+          fontFamily: {
+            playfair: ['"Playfair Display"', 'serif'],
+            dancing: ['"Dancing Script"', 'cursive'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
 </head>
-<body>
-    <header class="header">
-        <div class="main-logo">
-            <img src="images/samay_white.jpg" alt="Samay Breathing Logo">
+
+<body class="bg-tierra-claro font-playfair">
+  <!-- HEADER (lo que ya tenés) -->
+<header class="bg-tierra-claro py-6 px-6 shadow-md">
+    <div class="flex justify-between items-center max-w-7xl mx-auto">
+      <!-- Logo + Título -->
+      <div class="flex items-center gap-4">
+        <img src="images/samay_white.png" alt="Samay Breathing Logo"
+  class="h-16 w-16 object-cover rounded-full border-2 border-cobre shadow-lg">
+        <div class="text-left">
+          <h1 class="text-4xl font-bold text-madera tracking-tight leading-tight">SamayBreathing</h1>
+<p class="text-md text-rojo-tierra font-dancing italic -mt-1">
+  Find your ground, breathe your truth
+</p>
         </div>
-    </header>
+      </div>
 
-    <section class="about-section">
-        <img src="images/shamanic_breathing.jpg" alt="Shamanic Breathwork" class="about-image">
-        <div class="about-text">
-            <h2>Who am I?</h2>
-            <p>Hi, I'm Daniela, the creator of Samay Breathing.</p>
-            <p>Breathwork is more than just a practice for me—it's a path to self-discovery, healing, and deep connection with ancestral wisdom. In a world full of distractions, our breath is a powerful tool that brings us back to ourselves, to our truth.</p>
-            <p>My journey with breath has transformed me in ways I can't fully put into words. It has strengthened my intuition, deepened my awareness, and opened doors to experiences beyond explanation.</p>
-            <p>This website is just the beginning—what I truly want to share goes far beyond these pages. It’s about reconnecting with something ancient and sacred, something that has always been within us.</p>
+      <!-- Navegación -->
+      <nav class="hidden md:flex gap-6">
+        <a href="#home" class="text-madera hover:text-rojo-tierra transition">Home</a>
+        <a href="#about" class="text-madera hover:text-rojo-tierra transition">About</a>
+        <a href="#blog" class="text-madera hover:text-rojo-tierra transition">Blog</a>
+        <a href="#contact" class="text-madera hover:text-rojo-tierra transition">Contact</a>
+      </nav>
+
+      <!-- Dark mode -->
+      <button id="dark-mode-toggle"
+  class="text-xl p-2 rounded-full hover:bg-arena transition hidden md:block" title="Toggle Dark Mode">🌙</button>
+    </div>
+  </header> 
+<main class="max-w-4xl mx-auto px-6 py-10 space-y-16">
+
+  <!-- ABOUT ME -->
+  <section id="about" class="text-madera space-y-6">
+    <h2 class="text-3xl font-bold text-rojo-tierra mb-4">About Me</h2>
+
+    <div class="flex flex-col md:flex-row gap-8 items-center">
+      <img src="images/seeker.jpeg" alt="Seeker" class="w-full md:w-1/2 rounded-xl shadow-md object-cover">
+      <div class="space-y-4 text-lg leading-relaxed">
+        <h3 class="text-2xl font-bold text-madera">Welcome to My Journey</h3>
+    Life—what we think we see every day with our eyes—is made up of emotions, imbalances, destructions, inner deaths, physical losses, and transformations that bring us closer to the reminder of what we forgot when we came here.
+  </p>
+  <p>
+    That’s how I continued on my path. Every time I felt alone, insecure, or traveled (perhaps escaping the truth I carry inside), I was unknowingly connecting with something I wasn’t even ready to receive. And only now do I know—it’s time to share it. To bring out what defines me and what I know I’ve become.
+  </p>
+  <p>
+    Just like everyone has moments that bring them closer to their truth, there is always destruction and discomfort along the way. That’s how I know I’m walking the right path—because it feels uncomfortable. Sometimes I want to stop, but I know I’m supported by my ancestors, my guides, who show me signs every day.
+  </p>
+  <p>
+    That’s what I want to share through breathwork. Maybe many of us are walking this same path. That’s why pain is good. Feeling discomfort, sadness—it’s part of it. And then the sun appears and embraces us with the good things. Breathwork reminds me of that: to cleanse myself each day, to work on myself, and to really see what’s going on around me.
+  </p>
+  <p>
+    Breathwork has shown me the connection between my body, mind, soul, and spirit. It brought me home to the ancestral knowledge I carry. The signs were always there—I just had to learn how to listen.
+</p>
+ </div>
+  </div>
+</section>
+
+<!-- WELCOME SECTION -->
+<section class="text-center space-y-4 mt-16">
+  <h2 class="text-3xl font-bold text-rojo-tierra">Welcome to SamayBreathing</h2>
+  <p class="text-lg text-madera max-w-xl mx-auto">
+    Explore the mystical world of medicinal plants, breathwork, and spiritual connection.
+  </p>
+</section>
+
+<!-- BLOG SECTION -->
+<section id="blog" class="mt-20">
+  <div class="text-center mb-8">
+    <h2 class="text-3xl font-bold text-rojo-tierra">Blog</h2>
+  </div>
+
+
+  <div class="grid md:grid-cols-2 gap-8">
+    <article class="bg-white rounded-xl shadow-md p-6 space-y-4 text-madera">
+      <img src="images/breathing.jpg" alt="Breathing Image" class="rounded-lg shadow-md object-cover w-full h-60">
+      <h3 class="text-2xl font-bold">How Breathwork Transforms Your Energy</h3>
+      <p>               
+Discover how conscious breathing can change your state of mind, improve your health, and deepen your spiritual practice.</p>
+
+                     </p>
+      <button class="expand-article">Read More</button>
+      <div class="article-content hidden">
+                        <p>Breathwork has been practiced for centuries as a tool to access deeper states of consciousness</p>
+                    </div>
+                </article>
+                
+                
+    <article class="bg-white rounded-xl shadow-md p-6 space-y-4 text-madera">
+      <img src="images/ground.jpg" alt="Grounding Image" class="rounded-lg shadow-md object-cover w-full h-60">
+      <h3 class="text-2xl font-bold">The Power of Grounding</h3>
+      <p>
+         Learn techniques to ground yourself and connect with the Earth’s energy for balance and clarity.
+</p>
+      <button class="expand-article">Read More</button>
+      <div class="article-content hidden">
+                        <p>Grounding techniques have been used by ancient cultures to reconnect with nature</p>
+                    </div>
+                </article>
+            </section>
         </div>
-    </section>
 
-    <footer>
-        <p>&copy; 2024 Samay Breathing - All rights reserved</p>
-    </footer>
-</body>
-</html>
+<!-- PLANT MEDICINE SECTION -->
+<section class="plant-medicine mt-20 text-madera space-y-6">
+  <h2 class="text-3xl font-bold text-rojo-tierra text-center">Plant Medicines & Holotropic Breathing</h2>
+  <p class="text-lg max-w-3xl mx-auto text-center">
+    On my path, each plant arrived at the perfect moment—guided by breath, intention, and spirit. These are not trends. They are living wisdom.
+   <div class="space-y-8">
+    <div>
+      <h3 class="text-2xl font-bold">Rapé</h3>
+ <img src="images/rapé.jpg" alt="rapé Image" class="blog-image">	
+    <p>Rapé has taught me to silence the mind and open the spiritual channel. It’s used with deep respect and in moments of inner clarity.</p>
+    <p><em>“I quiet your mind so you can hear the whisper of your soul.”</em></p>
+
+    <div>
+      <h3 class="text-2xl font-bold">Cacao</h3>
+<img src="images/cacao.jpg" alt="cacao Image" class="blog-image">	
+    <p>Cacao walks with me during heart-opening ceremonies. Its sweetness is not weakness—it’s a portal to sensitivity and presence.</p>
+    <p><em>“I open your heart so you remember that everything you feel is also medicine.”</em></p>
+ </div>
+
+   <div>
+      <h3 class="text-2xl font-bold">Ayahuasca</h3>
+<img src="images/ayahuasca.jpg" alt="ayahuasca Image" class="blog-image">
+    <p>Grandmother Ayahuasca has shown me parts of myself that needed to be seen with compassion. Her energy is strong but deeply loving.</p>
+    <p><em>“I reveal your shadow so you can remember your light.”</em></p>
+</div>
+
+        <p>Combined with holotropic breathwork, these sacred plants don’t just open us… they bring us home. Breath is the bridge between these energies and the body. That’s why preparation, listening, and reverence are essential. This is not a trend. This is a return.  
+</p>
+  </div>
+</section>
+
+<!-- PLANTAS Y RESPIRACIÓN -->
+
+<section class="plants-and-breathwork mt-20 text-madera space-y-4">
+  <h2 class="text-3xl font-bold text-rojo-tierra text-center">Plantas y Respiración</h2>
+  <p class="text-lg max-w-3xl mx-auto">
+        La respiración ha sido mi guía, mi raíz y mi medicina más pura. Y en ese camino, las plantas sagradas como el rapé, el cacao, la ayahuasca, y muchas otras que nacen de nuestra tierra, se han presentado como maestras silenciosas que acompañan el proceso. Cada una con su espíritu, con su enseñanza, con su energía. No se trata de seguir una moda, sino de escuchar el llamado. De saber cuándo el alma está lista para abrirse, para recordar, para sanar. La respiración y las plantas no curan por separado: se potencian, se abrazan, y nos devuelven al origen. A ese lugar donde no hay ruido, solo verdad.
+    </p>
+</section>
 
 
+        <<section id="contact" class="contact-section bg-white py-10 px-6 rounded-lg shadow-md mt-16">
+  <h2 class="text-3xl font-bold text-rojo-tierra text-center mb-6">Contact</h2>
+  <form action="https://formspree.io/f/xyzkayln" method="POST" id="contact-form" class="space-y-6 max-w-2xl mx-auto">
+    <div class="space-y-2">
+      <label for="name" class="block text-madera font-medium">Name:</label>
+      <input type="text" id="name" name="name" required class="w-full p-3 border border-madera rounded-lg focus:ring-cobre focus:border-cobre">
+    </div>
+
+    <div class="space-y-2">
+      <label for="email" class="block text-madera font-medium">Email:</label>
+      <input type="email" id="email" name="email" required class="w-full p-3 border border-madera rounded-lg focus:ring-cobre focus:border-cobre">
+    </div>
+
+    <div class="space-y-2">
+      <label for="message" class="block text-madera font-medium">Message:</label>
+      <textarea id="message" name="message" rows="6" required class="w-full p-3 border border-madera rounded-lg focus:ring-cobre focus:border-cobre"></textarea>
+    </div>
+
+    <button type="submit" class="w-full py-3 bg-cobre text-white rounded-lg hover:bg-madera transition">Send</button>
+  </form>
+  
+  <p class="mt-6 text-center text-madera">Follow me on Instagram: <a href="https://www.instagram.com/samaybreathwork/" target="_blank" class="text-cobre hover:text-rojo-tierra">@samaybreathwork</a></p>
+</section>
